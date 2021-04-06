@@ -1,9 +1,23 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <style>
+            thead {color: turquoise;}
+            tbody {color: palevioletred;}
+            tfoot {color: chartreuse;}
+            table,th,td {
+                border: 1px solid powderblue;
+            }
+            caption {
+                display: table-caption;
+                text-align: center;
+                text-justify: auto;
+                    }
+        </style>
          <title>This is our first class</title>
          <link rel="icon" href="image/logo.png">
          <link rel="stylesheet" href="css/STYLE.CSS">
+         
     </head>
 <body>
     
@@ -344,229 +358,608 @@
                     </td>
                 </tr><tr>
                     <td>33</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>input</td>
+                    <td>Defines an input control</td>
+                    <td>
+                        <form>
+                            <label for="fname">First Name:</label>
+                            <input type="text" id="fname"><br><br>
+                            <label for="lname">Last Name:</label>
+                            <input type="text" id="lname"><br><br>
+                            <input type="submit" value="Submit">
+                        </form>
+                    </td>
                 </tr>
                 <tr>
                     <td>34</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>textarea</td>
+                    <td>Defines a multiline input control (text area)</td>
+                    <td>
+                            <label for="Eatpure">Review of Eatpure:</label>
+                            <br>
+                            <textarea id="eatpure" name="Eatpure" rows="4" cols="40">
+Excellent achar in town. Keep it up. Highly recomended.
+                            </textarea>
+                            <br><br>
+                            <input type="submit" value="Submit">
+                            
+                        </td>
                 </tr>
                 <tr>
                     <td>35</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>button</td>
+                    <td>Defines a clickable button</td>
+                    <td>
+                        <button type="button">Click Me!</button> 
+                    </td>
                 </tr>
                 <tr>
                     <td>36</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>select</td>
+                    <td>Defines a drop-down list</td>
+                    <td>
+                        <form action="/action_page.php">
+                            <label for="City">Choose a City:</label>
+                            <select name="City" id="City">
+                              <option value="Dhaka">Dhaka</option>
+                              <option value="Chattogram">Chattogram</option>
+                              <option value="Khulna">Khulna</option>
+                              <option value="Rajshahi">Rajshahi</option>
+                            </select>
+                            <br><br>
+                            <input type="submit" value="Submit">
+                          </form>
+                    </td>
                 </tr>
                 <tr>
                     <td>37</td>
+                    <td>optgroup</td>
                     <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>
+                        <form action="/action_page.php">
+                        <label for="City">Choose a City:</label>
+                        <select name="City" id="City">
+                            <optgroup label="Select">
+                          <option value="Dhaka">Dhaka</option>
+                          <option value="Chattogram">Chattogram</option>
+                          <option value="Khulna">Khulna</option>
+                          <option value="Rajshahi">Rajshahi</option>
+                        </optgroup>
+                        </select>
+                        <br><br>
+                        <input type="submit" value="Submit">
+                      </form>
+                    </td>
                 </tr>
                 <tr>
                     <td>38</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>label</td>
+                    <td>Defines a label for an 'input' element</td>
+                    <td>
+                        <p>PLease select</p>
+                        <form action="/action_page.php">
+                            <label for="male">Male</label>
+                            <input type="radio" name="gender" id="male" value="male"><br>
+                            <label for="female">Female</label>
+                            <input type="radio" name="gender" id="female" value="female"><br>
+                            <label for="other">Other</label>
+                            <input type="radio" name="gender" id="other" value="other"><br><br>
+                            <input type="submit" value="Submit">
+                          </form> 
+                    </td>
                 </tr>
                 <tr>
                     <td>39</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>fieldset</td>
+                    <td>Groups related elements in a form</td>
+                    <td>
+                        <form action="/action_page.php">
+                            <fieldset>
+                                <legend>Personal Information</legend>
+                                <label for="fname">First Name:</label>
+                                <input type="text" id="fname" name="fname"><br><br>
+                                <label for="lname">Last Name</label>
+                                <input type="text" id="lname" name="lname"><br><br>
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email"><br><br>
+                                <label for="birthday">Date of Birth</label>
+                                <input type="date" id="birthday" name="birthday"><br><br>
+                                <input type="submit" value="submit">    
+                            </fieldset>
+                        </form>
+                    </td>
                 </tr>
                 <tr>
                     <td>40</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>legend</td>
+                    <td>Defines a caption for a 'fieldset' element</td>
+                    <td>
+                        <form action="/action_page.php">
+                            <fieldset>
+                                <legend>Google form</legend>
+                                <label for="fname">First name:</label>
+                                <input type="text" id="fname" name="fname"><br><br>
+                                <label for="birthday">Enter your age:</label>
+                                <input type="number" id="birthday" name="birthday">
+                                <input type="submit" value="submit">
+                            </fieldset>
+                        </form>
+                    </td>
                 </tr>
                 <tr>
                     <td>41</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>datalist</td>
+                    <td>Specifies a list of pre-defined options for input controls</td>
+                    <td>
+                        <form action="/action_page.php" method="GET">
+                        <label for="browser">Choose your browser from the list:</label>
+                        <input list="browsers" name="browser" id="browser">
+                        <datalist id="browsers">
+                            <option value="Edge">
+                            <option value="Firefox">
+                        </datalist>
+                        <input type="submit">
+                        </form>
+                    </td>
                 </tr>
                 <tr>
                     <td>42</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>iframe</td>
+                    <td>Defines an inline frame</td>
+                    <td>
+                        <iframe src="https://www.instagram.com/" title="Instragram"></iframe>
+                    </td>
                 </tr>
                 <tr>
                     <td>43</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>img</td>
+                    <td>Defines an image</td>
+                    <td>
+                        <img src="/image/Elsa in action.jpg" alt="Elsa photo" width="100" height="100">
+                    </td>
                 </tr>
                 <tr>
                     <td>44</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>svg</td>
+                    <td>Defines a container for SVG graphics</td>
+                    <td>
+                        <svg width="100" height="100">
+                            <circle cx="50" cy="50" r="40" stroke="purple" stroke-width="4" fill="grey" />
+                            
+                            Sorry, your browser does not support inline SVG.
+                        </svg>
+                    </td>
                 </tr>
                 <tr>
                     <td>45</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>audio</td>
+                    <td>Defines sound content</td>
+                    <td>
+                        <p>Click on the play button to play a sound:</p>
+                        <audio controls>
+                            <source src="Sounds/COKATAIL SOUND.mp4" type="audio/mp4">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
                 </tr>
                 <tr>
                     <td>46</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>source</td>
+                    <td>Defines multiple media resources for media elements (video, audio and picture)</td>
+                    <td>
+                        <p>The video element</p>
+                        <video width="300" height="240" controls>
+                            <source src="/video/blue butterfly.mp4" type="video/mp4">
+                        </video>
+                    </td>
                 </tr>
                 <tr>
                     <td>47</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>a</td>
+                    <td>Defines a hyperlink</td>
+                    <td>
+                        <a href="https://www.youtube.com/">Visit YouTube</a>
+                    </td>
                 </tr>
                 <tr>
                     <td>48</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>nav</td>
+                    <td>Defines navigation links</td>
+                    <td>
+                        <p>The nav element defines a set of navigation links:</p>
+                        <nav>
+                            <a href="/index.html">HTML</a>
+                            <a href="/CSS/STYLE.CSS">CSS</a>
+                        </nav>
+                    </td>
                 </tr>
                 <tr>
                     <td>49</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>ul</td>
+                    <td>Defines an unordered list</td>
+                    <td>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Javascript</li>
+                            <li>PHP/Laravel</li>
+                        </ul>
+                    </td>
                 </tr>
                 <tr>
                     <td>50</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>ol</td>
+                    <td>Defines an ordered list</td>
+                    <td>
+                        <ol>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Javascript</li>
+                            <li>PHP/Laravel</li>
+                        </ol>
+                        <p>Reversed</p>
+                        <ol reversed>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Javascript</li>
+                            <li>PHP/Laravel</li>
+                        </ol>
+                        <p>Start</p>
+                        <ol start="69">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Javascript</li>
+                            <li>PHP/Laravel</li>
+                        </ol>
+                        <p>Type</p>
+                        <ol type="A">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Javascript</li>
+                            <li>PHP/Laravel</li>
+                        </ol>
+                        <ol type="I">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Javascript</li>
+                            <li>PHP/Laravel</li>
+                        </ol>
+                    </td>
                 </tr>
                 <tr>
                     <td>51</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>dl</td>
+                    <td>Defines a description list</td>
+                    <td>
+                        <dl>
+                            <dt>Coffee</dt>
+                            <dd>Black hot drink</dd>
+                            <br>
+                            <dt>Milk</dt>
+                            <dd>White cold drink</dd>
+                        </dl>
+                    </td>
                 </tr><tr>
                     <td>52</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr><tr>
+                    <td>dt</td>
+                    <td>Defines a term/name in a description list</td>
+                    <td>
+                        <dl>
+                            <dt>Coffee</dt>
+                            <dd>Black hot drink</dd>
+                            <br>
+                            <dt>Milk</dt>
+                            <dd>White cold drink</dd>
+                        </dl>
+                    </td>
+                </tr>
+                <tr>
                     <td>53</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>dd</td>
+                    <td>Defines a description of a term/name in a description list</td>
+                    <td>
+                        <dl>
+                            <dt>Coffee</dt>
+                            <dd>Black hot drink</dd>
+                            <br>
+                            <dt>Milk</dt>
+                            <dd>White cold drink</dd>
+                        </dl>
+                    </td>
                 </tr>
                 <tr>
                     <td>54</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>table</td>
+                    <td>Defines a table</td>
+                    <td>
+                        <table>
+                            <caption>Monthly Income</caption>
+                            <tr>
+                              <th>Month</th>
+                              <th>Savings</th>
+                            </tr>
+                            <tr>
+                              <td>January</td>
+                              <td>$100</td>
+                            </tr>
+                          </table> 
+                    </td>
                 </tr>
                 <tr>
                     <td>55</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>th</td>
+                    <td>Define a header cell in a table</td>
+                    <td>
+                        <table>
+                            <tr>
+                                <th abbr="Make">Toy manufacturer</th>
+                                <th abbr="Model">Vehicle Model</th>
+                            </tr>
+                            <tr>
+                                <td>Bruder Toys</td>
+                                <td>Cross Country Vehicle</td>
+                            </tr>
+                            <tr>
+                            <td>Bruder Toys</td>
+                            <td> DHL Lorry</td>
+                            </tr>
+                        </table>
+                        <br>
+                        <br>
+                        <table>
+                            <caption><strong><i>Monthly Income<i></i></strong></caption>
+                            <tr>
+                              <th id="Monthly Savings" colspan="2">Monthly Savings</th>
+                              <th rowspan="3">Savings for holidays</th>
+                            </tr>
+                            <tr>
+                              <td>January</td>
+                              <td>$100</td>
+                            </tr>
+                            <tr>
+                                <td>February</td>
+                                <td>$500</td>
+                              </tr>
+                          </table> 
+                    </td>
                 </tr>
                 <tr>
                     <td>56</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>thead</td>
+                    <td>Groups the header content in a table</td>
+                    <td>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Month</th>
+                                    <th>Savings</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>January</td>
+                                    <td>$1000</td>
+                                </tr>
+                                <tr>
+                                    <td>February</td>
+                                    <td>$1500</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>Sum</td>
+                                    <td>$2500</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </td>
                 </tr>
                 <tr>
                     <td>57</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>colgroup</td>
+                    <td>Specifies a group of one or more columns in a table for formatting</td>
+                    <td>
+                        <table>
+                            <colgroup>
+                            <col span="2" style="background:khaki;">
+                            <col style="background:lightcyan;">
+                            </colgroup>
+                            <tr>
+                                <th>ISBN</th>
+                                <th>Title</th>
+                                <th>Price</th>
+                            </tr>
+                            <tr>
+                                <td>36476274829</td>
+                                <td>My first assignment of HTML</td>
+                                <td>$100</td>
+                            </tr>
+                        </table>
+                    </td>
                 </tr>
                 <tr>
                     <td>58</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>style</td>
+                    <td>Defines style information for a document</td>
+                    <td>
+                        
+                        <style>
+                            h1 {color:red;}
+                            p {color: slateblue;}
+                            </style>
+                                       
+                            <h1>This is a heading</h1>
+                            <p>This is a paragraph.</p>
+                                                    
+                    </td>
                 </tr>
                 <tr>
                     <td>59</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>div</td>
+                    <td>Defines a section in a document</td>
+                    <td>
+                        <head>
+                        <style>
+                            .myDiv {
+                              border: 5px outset red;
+                              background-color: lightblue;    
+                              text-align: center;
+                            }
+                            </style>
+                        </head>
+                        <div class="myDiv">
+                            <h2>This is a heading in a div element</h2>
+                            <p>This is some text in a div element.</p>
+                          </div>
+                                                      
+                    </td>
                 </tr>
                 <tr>
                     <td>60</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>span</td>
+                    <td>Defines a section in a document</td>
+                    <td>
+                        <p>My mother has <span style="color:red;font-weight:bolder">red</span> car and my father has <span style="color:greenyellow;font-weight:bold">greenyellow</span> SUV.</p>
+                    </td>
                 </tr>
                 <tr>
                     <td>61</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>footer</td>
+                    <td>Defines a footer for a document or section</td>
+                    <td>
+                        <footer>
+                            <p>Author: Ruksah Ara Ateeka</p>
+                            <p><a href="mailto:ruksah@gmail.com">ruksah@gmail.com</a></p>
+                          </footer> 
+                    </td>
                 </tr>
                 <tr>
                     <td>62</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>main</td>
+                    <td>Specifies the main content of a document</td>
+                    <td>
+                        <main>
+                            <h1>Most Popular Browsers</h1>
+                            <p>Chrome, Firefox, and Edge are the most used browsers today.</p>
+                          
+                            <article>
+                              <h2>Google Chrome</h2>
+                              <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+                            </article>
+                          
+                            <article>
+                              <h2>Mozilla Firefox</h2>
+                              <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+                            </article>
+                          
+                            <article>
+                              <h2>Microsoft Edge</h2>
+                              <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+                            </article>
+                          </main>
+                          
+                    </td>
                 </tr>
                 <tr>
                     <td>63</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>section</td>
+                    <td>Defines a section in a document</td>
+                    <td>
+                        <section>
+                            <h2>WWF History</h2>
+                            <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+                            </section>
+                            
+                        <section>
+                            <h2>WWF's Symbol</h2>
+                            <p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p>
+                        </section> 
+                    </td>
                 </tr>
                 <tr>
                     <td>64</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>aside</td>
+                    <td>Defines content aside from the page content</td>
+                    <td>
+                        <p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+
+<aside>
+  <h4>***Epcot Center</h4>
+  <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+</aside>
+                    </td>
                 </tr>
                 <tr>
                     <td>65</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>details</td>
+                    <td>Defines additional details that the user can view or hide</td>
+                    <td>
+                        <details>
+                            <summary>Epcot Center</summary>
+                            <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+                          </details> 
+                    </td>
                 </tr>
                 <tr>
                     <td>66</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>dialog</td>
+                    <td>Defines a dialog box or window</td>
+                    <td>
+                        <p>This is some text.</p>
+
+                        <p>This is some text.</p>
+
+                        <dialog open>This is an open dialog window</dialog>
+
+                        <p>This is some text.</p>
+
+                        <p>This is some text.</p>
+                    </td>
                 </tr>
                 <tr>
                     <td>67</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>summary</td>
+                    <td>Defines a visible heading for a 'details' element</td>
+                    <td>
+                        <details>
+                            <summary>Epcot Center</summary>
+                            <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+                          </details>     
+                    </td>
                 </tr>
                 <tr>
                     <td>68</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>data</td>
+                    <td>Adds a machine-readable translation of a given content</td>
+                    <td>
+                        <p>The following example displays product names but also associates each name with a product number:</p>
+
+                            <ol>
+                                <li><data value="21053">Cherry Tomato</data></li>
+                                <li><data value="21054">Beef Tomato</data></li>
+                                <li><data value="21055">Snack Tomato</data></li>
+                            </ol>
+
+                    </td>
                 </tr>
                 <tr>
                     <td>69</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>embed</td>
+                    <td>Defines a container for an external (non-HTML) application</td>
+                    <td>
+                        <embed type="image/jpg" src="image/Elsa pp.jpg" width="100" height="100">
+                    </td>
                 </tr>
                 <tr>
                     <td>70</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>figure</td>
+                    <td>Specifies self-contained content</td>
+                    <td>
+                        <figure>
+                            <img src="image/Harry potter.jpg" alt="Harry" style="width:50%">
+                            <figcaption>Fig.1 - Harry Potter part-01.</figcaption>
+                          </figure>
+                    </td>
                 </tr>
                             
       </table>
